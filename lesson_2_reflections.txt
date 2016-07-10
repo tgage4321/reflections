@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+- It is how you start a new repository. If you run this command a new repository is made that you can add and remove files to or edit to make a new software project. I guess you need to do it to start a repository? Seems like a trick question a little bit...
+
+******************************************************************************

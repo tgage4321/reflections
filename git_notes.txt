@@ -1,0 +1,20 @@
+Notes ********************************************************************************* Notes
+git log => revision history information
+	--stat => argument to give statistics om additions and deletions, seems useful
+
+git diff <OLD rev ID> <NEW rev ID> => similar to FC see versions of files in git. For example if the new rev ID added lines, they would show up as additions. 
+
+git clone <URL>  - copies a repository so the history of all the files 
+
+git config --global color.ui auto - give color to the text, helpful for git diff commands
+
+q - quit diff 
+
+git checkout - get a previous version of the repository, an older commit, not the same as SVN checkout
+
+git init - Once inside of a directory this command creates a new git repository. Now there is a .git directory made, I am assuming this is where revision meta data is stored?
+
+git status - See what branch you are on and also shows what files are currently changed. This is pretty boss. 
+
+git add - staging area to add files that will be added to the next commit. You can run git status again to see what files are being added to the next commit, or that are in the staging area. 
+

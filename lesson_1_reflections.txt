@@ -1,0 +1,34 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+- Looking through the diff (or on windows the FC), you had to scroll through a bit but the way that
+its set up the differences really pop out at you when reading through. Since the differences catch your eye, 
+it is easy to detect when something looks wrong and that can be very helpful for debugging, because often the
+mistakes are in the changes we made that broke a previously working piece of code. 
+
+******************************************************************************
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+- You could trace theough the history of a project by observing how it evolved into its current state. There are lots of benefits to this. You could reinforce ideas that drove design decisions that give you a better understanding on how to efficiently design through similar situations in the future. Also, if you had it in a working state and went on a sort of branch or tangent that ended up creating more complexity, you could revert back to before all the added complexity instead of trying to reverse engineer through it.
+
+******************************************************************************
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+- Honestly I don't really see any advantage in having code automatically saved. The only reasons I can think of to have automatic save is if your computer crashed or froze and an auto save would save work at the last save. Other than that, opening old code that was saved in random places seems sorta pointless to me. Manual saving could keep things organized and linear in a correct fasion, that's what I would go with. 
+
+******************************************************************************
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+- Git was designed for software, in SW projects you will implement changes that will span multiple files and every commit needs to have the latest version of all files to make sure they are still able to interface with each other. Google docs are not made for files that are interacting really with each other I am assuming (never have used google docs). Changes can propogate through multiple files.  
+
+******************************************************************************
+How can you use the commands git log and git diff to view the history of files?
+- Well pressing git log shows all the commits as well as the commit messages. You can see where new features were added or removed while correlating that information with the revisions. Git diff means you can see more specifically what code was changed between commits. Gitt diff shows all the additions and deletions between two different versions of the files. 
+
+******************************************************************************
+How might using version control make you more confident to make changes that could break something?
+- Its great like you said in the beginning of the lesson, its like having a giant Undo. You can easily go back to any previous verison of the code and get it in a known state. Makes it easy to track down bugs when you can see exactly when they are introduced and just fix them. 
+
+******************************************************************************
+Now that you have your workspace set up, what do you want to try using Git for?
+- Got directed here from the nano degree intro program for Android programming. I am going to make a beautiful app and get noticed. 
+
+
