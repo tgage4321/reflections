@@ -4,3 +4,26 @@ What happens when you initialize a repository? Why do you need to do it?
 ******************************************************************************
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 - Well the staging area is basically a list of files that are going to be part of the next commit. So, they include some or all of the files in the working directory and reflect what is going to be in the repository at the next commit. It adds values as you can control exactly which files you want in each commit. You might not want to include all files in the directory for certain reasons, although personally I am not sure why you would want to do that too much. 
+
+******************************************************************************
+How can you use the staging area to make sure you have one commit per logical change?
+- You can run "git diff" to look at the differences between the staging area and working directory. Then add what changes you want to the staging area, then run "git diff --staged" in order to see the differences between staging area and the repository. Once going through all that, you can see the exact differences that are about to be commited. With that knowledge it is then possible to have a good grasp on what is changing and it can be verified that it is a single logical change. 
+
+******************************************************************************
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+- Well experimenting with new features, or new possible more efficient ways to implement something. Using branches is a way to experiment with the code with no reprocussions. For instance if you screw up the code in a branch you can just jump back to the original and you are good to go. 
+
+******************************************************************************
+How do the diagrams help you visualize the branch structure?
+- Seems like a little bit of a lazy questions, but you can easily see the parents of each commit and get an idea on the history of the project by observing how you split up the project as you went along. For instance it is possible to see where exactly you wanted to branch off to say add a new feature or experiment with a different implementation. It is very valuable to see this. 
+
+******************************************************************************
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- Merging the two branches together creates a single branch with both changes combined. For instance in this last lesson when combining the changes made to add coins with the other changes say adding color, you can see when combined all the combined changes resulted in a version with color and coins. The reasoning for the diagram I guess it makes it very easy to understand the evolution of the project when seeing it in that diagram. You can see changes being implemented to add the coins went off its own experimental way, while the main branch implemented other changes, and when combines you can see the final result. So thats a lot of words but in summary makes it easy to understand.
+
+******************************************************************************
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+- This question makes zero sense to me.  What is manual merging? If that is resolving conflicts, I guess it leaves it up to the user to decide what is the correct way when there are multiple possibilities.  
+
+
+

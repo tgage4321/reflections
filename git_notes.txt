@@ -1,20 +1,40 @@
 Notes ********************************************************************************* Notes
 git log => revision history information
-	--stat => argument to give statistics om additions and deletions, seems useful
+	--stat => argument to give statistics on additions and deletions, seems useful
 
 git diff <OLD rev ID> <NEW rev ID> => similar to FC see versions of files in git. For example if the new rev ID added lines, they would show up as additions. 
 
 git clone <URL>  - copies a repository so the history of all the files 
 
-git config --global color.ui auto - give color to the text, helpful for git diff commands
+git config --global color.ui auto => give color to the text, helpful for git diff commands
 
 q - quit diff 
 
-git checkout - get a previous version of the repository, an older commit, not the same as SVN checkout
+git checkout => get a previous version of the repository, an older commit, not the same as SVN checkout
 
-git init - Once inside of a directory this command creates a new git repository. Now there is a .git directory made, I am assuming this is where revision meta data is stored?
+git init => Once inside of a directory this command creates a new git repository. Now there is a .git directory made, I am assuming this is where revision meta data is stored?
 
-git status - See what branch you are on and also shows what files are currently changed. This is pretty boss. 
+git status => See what branch you are on and also shows what files are currently changed. This is pretty boss. 
 
-git add - staging area to add files that will be added to the next commit. You can run git status again to see what files are being added to the next commit, or that are in the staging area. 
+git add => staging area to add files that will be added to the next commit. You can run git status again to see what files are being added to the next commit, or that are in the staging area. 
+
+git diff  => If used with no parameters will run a diff on working directory and staging area.  Also once files are added to the staging area they are now considered the same as working directory, so they will not show differences when running this command. 
+
+git diff --staged => shows the difference between staging area and repository. Seems useful to run right before a commit to see the changes that are about to be added and make sure to not forget anything. 
+
+git reset --hard => Gets rid of ALL current stages. Be very careful using this as it is irreversible and will discard ALL changes that have been made and not committed.
+
+git branch => shows all the current branches
+
+gir branch <arg1> => creates a new branch named arg1. You can then checkout that branch and make changes to it as you go. 
+
+git log --graph --oneline branch1 branch2 => shows a log of all commits, but graphically shows how the branches are all related. Very useful to see whats going on. You can see when you branched off and those commits very easily. 
+
+git checkout -b <new branch name> - does 2 commands in one, does a checkout and creates a new branch simultaneously
+
+git merge <branch1> <branch2> => branch2 is said to be merged into branch1. Not sure if that 1st sentence is correct anymore. Make sure whatever commit you have checked out is going to be the head of the new commit after a merge. 
+
+git show <rev ID> => shows the diff of the commit with its parent
+
+git branch -d <branch name> => Deletes branch
 
