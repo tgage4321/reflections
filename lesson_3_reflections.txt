@@ -2,3 +2,7 @@ When would you want to use a remote repository rather than keeping all your work
 - If you need to back up or share your work with other people it would probably be a good idea to use a remote. That way you can have a central 
 place to access the project and make it easier to collaborate with others. It is also probably safer, for instance in case of a computer
 crash. 
+
+******************************************************************************
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+- You might have a situation with more than one perosn working off of a remote. If that is the case if one person was making changes that might conflict with changes someone else was making, it is easy to see why any sort of automatic changing of a project is undesirable. In fact, I feel like a version control system making any sort of automatic changes to your project is bad, kind of defeats the purpose of version control if you don't really have any control. 
