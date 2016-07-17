@@ -39,3 +39,11 @@ git show <rev ID> => shows the diff of the commit with its parent
 git branch -d <branch name> => Deletes branch
 
 git remote => view all remotes of the git repository. Remotes are a place where commits can be pushed and pulled ie github. 
+
+git remote add <name of remote> <name of branch> => How to set up a new remote on github. 
+
+git remote -v => see where to push and pull all repositories
+
+gir push <remote> <branch> => Add a branch to the remote
+
+gir pull <remote> <branch> => Add a branch to the local working directory
