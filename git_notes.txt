@@ -38,3 +38,4 @@ git show <rev ID> => shows the diff of the commit with its parent
 
 git branch -d <branch name> => Deletes branch
 
+git remote => view all remotes of the git repository. Remotes are a place where commits can be pushed and pulled ie github. 
